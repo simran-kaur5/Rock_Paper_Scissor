@@ -1,0 +1,121 @@
+/* Reset & Base */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #E6E6FA;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigation */
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    font-weight: bold;
+    background-color: black;
+    height: clamp(12vmin, 15vmin, 17vmin);
+    flex-wrap: wrap;
+}
+
+.heading{
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+/* Choices Images */
+.imgs{
+    display: flex;
+    justify-content: center;
+    column-gap: clamp(1rem, 5vw, 3rem);
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+#rock, #paper, #scissor{
+    width: clamp(80px, 20vmin, 150px);
+    height: clamp(80px, 20vmin, 150px);
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.choice:hover{
+    transform: scale(1.05);
+}
+
+/* Labels below images */
+.words{
+    display: flex;
+    justify-content: center;
+    column-gap: clamp(2rem, 8vw, 8.6rem);
+    margin-top: 1rem;
+}
+
+.roc, .pap, .sci{
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+/* Scoreboard */
+.score-board{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    gap: clamp(1rem, 3vw, 3rem);
+}
+
+.score{
+    padding: 0 1rem;
+}
+
+#user-score , #comp-score{
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+/* Messages */
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+.play, .re{
+    display: inline-block;
+    background-color:#081b31;
+    color: white;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.play{
+    margin-top: 5rem;
+}
+
+.re:hover, .play:hover{
+    background-color:#26313c;
+}
+
+/* Reset Button Container */
+.reset{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
