@@ -14,3 +14,6 @@ Technologies Used
 1. HTML5 – Structure
 2. CSS3 – Styling and layout
 3. JavaScript (Vanilla) – Game logic
+
+To see the result run the following URL in browser-
+https://simran-kaur5.github.io/Rock_Paper_Scissor/
